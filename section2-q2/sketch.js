@@ -6,6 +6,22 @@ function setup() {
   for(let i = 0; i < 8; i++){
     for(let j = 0; j < 8; j++){
       // BLANK[1] (hint: rectのx座標は size * i, y座標はsize * j)
+      fill(i % 2 == 1 && j % 2 == 1 || i % 2 == 0 && j % 2 == 0 ?  255 : 150);
+      console.log(i, j);
+      rect(i * 10, j * 10, 10 , 10);
+    }
+  }
+  for(let k = 0; k < 8; k++){
+    for(let l = 0; l < 8; l++){
+      console.log(k, l);
+      if(k % 2 == 1 && l % 2 == 1){
+        fill(255, 0, 0);
+        ellipse(k * 10, l * 10, 5);
+      }
+      else{
+        fill(0, 0, 255);
+        ellipse(k * 10, l * 10, 5);
+      }
     }
   }
 }
