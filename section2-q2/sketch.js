@@ -14,13 +14,13 @@ function setup() {
   for(let k = 0; k < 8; k++){
     for(let l = 0; l < 8; l++){
       console.log(k, l);
-      if(k % 2 == 1 && l % 2 == 1 || k % 2 == 0 && l % 2 == 0, l <= 2){
+      if(k % 2 == 0 && l % 2 == 1 || k % 2 == 0 && l % 2 == 1, l <= 2){
         fill(255, 0, 0);
-        ellipse(k * 10 + 5, l * 10 + 5, 8);
+        ellipse(k * 10 + 5, l * 10 + 5, 9);
       }
       else if(k % 2 == 1 && l % 2 == 1 || k % 2 == 0 && l % 2 == 0, l >= 5){
         fill(0);
-        ellipse(k * 10 + 5, l * 10 + 5, 8);
+        ellipse(k * 10 + 5, l * 10 + 5, 9);
       }
       }
     }
