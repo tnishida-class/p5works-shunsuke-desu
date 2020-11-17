@@ -3,7 +3,7 @@ function setup(){
   createCanvas(400, 400);
   background(255);
   kobeCity(100, 200, 100);
-  kobeUniv(300, 200, 100);
+  kobeUniv(48, 200, 100);
 }
 
 function kobeCity(x, y, size){
@@ -22,4 +22,12 @@ function kobeUniv(x, y, size){
   const blue = color(14, 47, 146);
   const green = color(22, 131, 46);
   const gray = color(77);
+
+  push();
+  noFill();
+  strokeWeight(size * 0.25);
+  strokeCap(SQUARE);
+  arc(x + size * 0.25, y, size, size, PI + QUARTER_PI, QUARTER_PI * 5 + PI);
+  // BLANK[1]
+  pop();
 }
