@@ -5,12 +5,12 @@ let cycle;
 function setup(){
   createCanvas(200, 200);
   count = 0;
-  cycle = 100;
+  cycle = 10;
 }
 
 function draw(){
   background(160, 192, 255);
-  count = (count + 1) % cycle;
-  // BLANK[1]
-  ellipse(width / 2, height / 2, size);
+  count = (count + 1 / 10) % cycle;
+
+  ellipse(width / 2, height / 2, cycle * count);
 }
