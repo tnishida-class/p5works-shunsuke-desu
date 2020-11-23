@@ -12,6 +12,16 @@ function setup(){
 }
 
 function draw(){
+
+  ellipse(mouseX, mouseY, size);
+}
+
+function mouseClicked(){
+  x = mouseX;
+  y = mouseY;
+}
+
+function draw(){
   background(160, 192, 255);
   ellipse(x, y, 30);
   x += vx;
@@ -25,6 +35,8 @@ function draw(){
   x = constrain(x, 0, width);
   y = constrain(y, 0, height);
 }
+
+
 
 function windowResized(){
   resizeCanvas(windowWidth, windowHeight);
