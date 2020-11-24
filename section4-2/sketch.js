@@ -11,10 +11,6 @@ function setup(){
   vy = 2;
 }
 
-function draw(){
-
-  ellipse(mouseX, mouseY, size);
-}
 
 function mouseClicked(){
   x = mouseX;
